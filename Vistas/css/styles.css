@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #dbdbdb!important;
+}
+
+.centrar{
+  display: grid;
+  place-items: center;
+}
+
+.formulario{
+    margin: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.acciones {
+    margin: 5px;
+}
+
+.buscar{
+    display: flex;
+}
+.buscar div{
+    margin: 5px;
+}
