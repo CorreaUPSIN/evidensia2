@@ -12,46 +12,40 @@
 
 </head>
 <body>
-
-
-
    <div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
 
    <div class="listadoAlumnos">
     <h1>Listado de alumnos</h1>
 
-    <table id="alumnos-lista">
-        
-            <thead>
-                <tr class="tableEncabezado">
-                    <th>ID</th>
-                    <th>Matricula</th>
-                    <th>Nombre</th>
-                    <th>Domicilio</th>
-                    <th>Sexo</th>
-                    <th>Especialidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <template id="fila-alumno">
-                <tr>
-                    <td class="id"></td>
-                    <td class="matricula"></td>
-                    <td class="nombre"></td>
-                    <td class="domicilio"></td>
-                    <td class="sexo"></td>
-                    <td class="especialidad"></td>
-                </tr>
+    <table id="alumnos-lista" class="table table-striped">
+        <thead>
+            <tr class="tableEncabezado">
+                <th>ID</th>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Domicilio</th>
+                <th>Sexo</th>
+                <th>Especialidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template id="fila-alumno">
+            <tr>
+                <td class="id"></td>
+                <td class="matricula"></td>
+                <td class="nombre"></td>
+                <td class="domicilio"></td>
+                <td class="sexo"></td>
+                <td class="especialidad"></td>
+            </tr>
             </template>
-            </tbody>
-        
+        </tbody>
     </table>
+   </div>
 
-</div>
-
-<template id="template-tablabuscar">
+    <template id="template-tablabuscar">
     <h3>Datos del alumno buscado:</h3>
-        <table id="alumnos-lista2" style="width: 500px;">
+        <table id="alumnos-lista2" class="table table-striped" style="width: 500px;">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -79,22 +73,22 @@
 
     <div class="formulario">
         <div class="buscar">
-            <button id="btnBuscar" class="button">Buscar</button>
+            <button id="btnBuscar" class="btn btn-primary">Buscar</button>
 
                 <div class="input-mac">
-                    <input type="text" id="Matricula" name="Matricula" placeholder="Matricula">
+                    <input type="text" id="Matricula" name="Matricula" placeholder="Matricula" class="form-control">
                 </div>
 
                 <div class="input-mac">
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control">
                 </div>
 
                 <div class="input-mac">
-                    <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio">
+                    <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio" class="form-control">
                 </div>
 
                 <div class="select-mac">
-                    <select name="Sexo" id="Sexo">
+                    <select name="Sexo" id="Sexo" class="form-control">
                         <option value="" disabled selected>Seleccione un Sexo</option>
                         <option value="M">Masculino</option>
                         <option value="F">Femenino</option>
@@ -103,33 +97,148 @@
                 </div>  
 
                 <div class="select-mac">
-                    <select name="Especialidad" id="Especialidad">
+                    <select name="Especialidad" id="Especialidad" class="form-control">
                         <option value="" disabled selected>Seleccione una especialidad</option>
-                        <option value="Ingeniería en Tecnologías de la Información">Ing. en Tecnologías de la Información</option>
-                        <option value="Ingeniería en Biotecnología">Ing. en Biotecnología</option>
-                        <option value="Ingeniería Mecatrónica">Ing. Mecatrónica</option>
-                        <option value="Ingeniería en Energía">Ing. en Energía</option>
-                        <option value="Ingeniería en Logística y Transporte">Ing. en Logística y Transporte</option>
-                        <option value="Ingeniería en Tecnología Ambiental">Ing. en Tecnología Ambiental</option>
-                        <option value="Ingeniería en Animación y Efectos Visuales">Ing. en Animación y Efectos Visuales</option>
-                        <option value="Ingeniería en Nanotecnología">Ing. en Nanotecnología</option>
-                        <option value="Licenciatura en Terapia Física">Lic. en Terapia Física</option>
-                        <option value="Licenciatura en Administración y Gestión Empresarial">Lic. en Administración y Gestión Empresarial</option>
+                        <
+
+
+
+
+Jorge Said Correa Sánchez
+continua
+
+Claro, aquí está el código HTML del body con Bootstrap aplicado:
+
+html
+Copy code
+<body>
+    <div class="container">
+        <div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
+
+        <div class="listadoAlumnos">
+            <h1>Listado de alumnos</h1>
+
+            <table id="alumnos-lista" class="table">
+                <thead>
+                    <tr class="tableEncabezado">
+                        <th>ID</th>
+                        <th>Matricula</th>
+                        <th>Nombre</th>
+                        <th>Domicilio</th>
+                        <th>Sexo</th>
+                        <th>Especialidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template id="fila-alumno">
+                        <tr>
+                            <td class="id"></td>
+                            <td class="matricula"></td>
+                            <td class="nombre"></td>
+                            <td class="domicilio"></td>
+                            <td class="sexo"></td>
+                            <td class="especialidad"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+
+        </div>
+
+        <template id="template-tablabuscar">
+            <h3>Datos del alumno buscado:</h3>
+            <table id="alumnos-lista2" class="table" style="width: 500px;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Matrícula</th>
+                        <th>Nombre</th>
+                        <th>Domicilio</th>
+                        <th>Sexo</th>
+                        <th>Especialidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template id="template-filasbuscar">
+                        <tr>
+                            <td class="id"></td>
+                            <td class="matricula"></td>
+                            <td class="nombre"></td>
+                            <td class="domicilio"></td>
+                            <td class="sexo"></td>
+                            <td class="especialidad"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+
+        <div class="formulario">
+            <div class="buscar">
+                <button id="btnBuscar" class="btn btn-primary">Buscar</button>
+
+                <div class="input-mac">
+                    <input type="text" id="Matricula" name="Matricula" placeholder="Matricula" class="form-control">
+                </div>
+
+                <div class="input-mac">
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control">
+                </div>
+
+                <div class="input-mac">
+                    <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio" class="form-control">
+                </div>
+
+                <div class="select-mac">
+                    <select name="Sexo" id="Sexo" class="form-control">
+                        <option value="" disabled selected>Seleccione un Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="?">Otro</option>
                     </select>
-                </div>   
+                </div>
 
+                <div class="select-mac">
+                    <select name="Especialidad" id="Especialidad" class="form-control">
+                        <option value="" disabled selected>Seleccione una especialidad</option>
+                        <option value="Ingeniería en
+
+
+
+
+Jorge Said Correa Sánchez
+continua
+
+Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
+<option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
+<option value="Ingeniería Industrial">Ingeniería Industrial</option>
+<option value="Licenciatura en Administración">Licenciatura en Administración</option>
+<option value="Licenciatura en Contaduría">Licenciatura en Contaduría</option>
+<option value="Licenciatura en Derecho">Licenciatura en Derecho</option>
+</select>
+</div>
+
+php
+Copy code
         </div>
-        <div class="acciones">
-            <button id="btnAgregar" class="button">Agregar</button>
-            <button id="btnBorrar" class="button">Borrar</button>
-            <button id="btnActualizar" class="button">Actualizar</button>
+
+        <div class="agregar">
+            <button id="btnAgregar" class="btn btn-success">Agregar</button>
+            <button id="btnEditar" class="btn btn-warning">Editar</button>
+            <button id="btnEliminar" class="btn btn-danger">Eliminar</button>
+            <button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
         </div>
-   </div>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    </div>
 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-+rJrLcL/hYTDENUIEJ7zAaRUw5ECKfhRR+OkvnKTa9uvBCF6ShKg6U2P+l3kxN0c"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-Bb+nTduZK7bh8eYn0GNoRpljKf+ghgQbcBd3qX9VDnu+PZlWzg8U+q3U5N6Fc5b6"
+    crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="/js/scripts.js"></script>
-
+</body>
 </html>
