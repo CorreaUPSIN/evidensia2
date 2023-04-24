@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evidencia 2</title>
-<link rel="stylesheet" href="/css/styles.css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
 </head>
 <body>
-<div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
 
-<div class="listadoAlumnos">
-    <h1 style="text-align: center;">Listado de alumnos</h1>
 
-    <table id="alumnos-lista" style="margin: 0 auto;">
-        <thead>
-            <tr class="tableEncabezado">
-                <th>ID</th>
-                <th>Matricula</th>
-                <th>Nombre</th>
-                <th>Domicilio</th>
-                <th>Sexo</th>
-                <th>Especialidad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <template id="fila-alumno">
+
+   <div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
+
+   <div class="listadoAlumnos">
+    <h1>Listado de alumnos</h1>
+
+    <table id="alumnos-lista">
+        
+            <thead>
+                <tr class="tableEncabezado">
+                    <th>ID</th>
+                    <th>Matricula</th>
+                    <th>Nombre</th>
+                    <th>Domicilio</th>
+                    <th>Sexo</th>
+                    <th>Especialidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template id="fila-alumno">
                 <tr>
                     <td class="id"></td>
                     <td class="matricula"></td>
@@ -37,113 +43,93 @@
                     <td class="especialidad"></td>
                 </tr>
             </template>
-        </tbody>
+            </tbody>
+        
     </table>
 
 </div>
 
 <template id="template-tablabuscar">
-    <h3 style="text-align: center;">Datos del alumno buscado:</h3>
-    <table id="alumnos-lista2" style="margin: 0 auto; width: 500px;">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Matrícula</th>
-                <th>Nombre</th>
-                <th>Domicilio</th>
-                <th>Sexo</th>
-                <th>Especialidad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <template id="template-filasbuscar">
+    <h3>Datos del alumno buscado:</h3>
+        <table id="alumnos-lista2" style="width: 500px;">
+            <thead>
                 <tr>
-                    <td class="id"></td>
-                    <td class="matricula"></td>
-                    <td class="nombre"></td>
-                    <td class="domicilio"></td>
-                    <td class="sexo"></td>
-                    <td class="especialidad"></td>
+                    <th>ID</th>
+                    <th>Matrícula</th>
+                    <th>Nombre</th>
+                    <th>Domicilio</th>
+                    <th>Sexo</th>
+                    <th>Especialidad</th>
                 </tr>
-            </template>
-        </tbody>
-    </table>
-</template>
+            </thead>
+            <tbody>
+                <template id="template-filasbuscar">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="matricula"></td>
+                        <td class="nombre"></td>
+                        <td class="domicilio"></td>
+                        <td class="sexo"></td>
+                        <td class="especialidad"></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </template>
 
-<div class="formulario" style="text-align: center;">
-    <div class="buscar" style="display: inline-block;">
-        <button id="btnBuscar" class="button">Buscar</button>
+    <div class="formulario">
+        <div class="buscar">
+            <button id="btnBuscar" class="button">Buscar</button>
 
-        <div class="input-mac">
-            <input type="text" id="Matricula" name="Matricula" placeholder="Matricula">
+                <div class="input-mac">
+                    <input type="text" id="Matricula" name="Matricula" placeholder="Matricula">
+                </div>
+
+                <div class="input-mac">
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+                </div>
+
+                <div class="input-mac">
+                    <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio">
+                </div>
+
+                <div class="select-mac">
+                    <select name="Sexo" id="Sexo">
+                        <option value="" disabled selected>Seleccione un Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="?">Otro</option>
+                    </select>
+                </div>  
+
+                <div class="select-mac">
+                    <select name="Especialidad" id="Especialidad">
+                        <option value="" disabled selected>Seleccione una especialidad</option>
+                        <option value="Ingeniería en Tecnologías de la Información">Ing. en Tecnologías de la Información</option>
+                        <option value="Ingeniería en Biotecnología">Ing. en Biotecnología</option>
+                        <option value="Ingeniería Mecatrónica">Ing. Mecatrónica</option>
+                        <option value="Ingeniería en Energía">Ing. en Energía</option>
+                        <option value="Ingeniería en Logística y Transporte">Ing. en Logística y Transporte</option>
+                        <option value="Ingeniería en Tecnología Ambiental">Ing. en Tecnología Ambiental</option>
+                        <option value="Ingeniería en Animación y Efectos Visuales">Ing. en Animación y Efectos Visuales</option>
+                        <option value="Ingeniería en Nanotecnología">Ing. en Nanotecnología</option>
+                        <option value="Licenciatura en Terapia Física">Lic. en Terapia Física</option>
+                        <option value="Licenciatura en Administración y Gestión Empresarial">Lic. en Administración y Gestión Empresarial</option>
+                    </select>
+                </div>   
+
         </div>
-
-        <div class="input-mac">
-            <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+        <div class="acciones">
+            <button id="btnAgregar" class="button">Agregar</button>
+            <button id="btnBorrar" class="button">Borrar</button>
+            <button id="btnActualizar" class="button">Actualizar</button>
         </div>
+   </div>
 
-        <div class="input-mac">
-            <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio">
-</div>
-
-        <div class="input-mac">
-            <select id="Sexo" name="Sexo">
-                <option value="">Seleccione sexo</option>
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-            </select>
-        </div>
-
-        <div class="input-mac">
-            <select id="Especialidad" name="Especialidad">
-                <option value="">Seleccione especialidad</option>
-                <option value="Informatica">Informatica</option>
-                <option value="Electronica">Electronica</option>
-                <option value="Mecatronica">Mecatronica</option>
-                <option value="Administracion">Administracion</option>
-            </select>
-        </div>
-
-        <button id="btnLimpiar" class="button">Limpiar</button>
-    </div>
-
-    <div class="agregar" style="display: inline-block;">
-        <button id="btnAgregar" class="button">Agregar</button>
-
-        <div class="input-mac">
-            <input type="text" id="MatriculaAgregar" name="MatriculaAgregar" placeholder="Matricula">
-        </div>
-
-        <div class="input-mac">
-            <input type="text" id="NombreAgregar" name="NombreAgregar" placeholder="Nombre">
-        </div>
-
-        <div class="input-mac">
-            <input type="text" id="DomicilioAgregar" name="DomicilioAgregar" placeholder="Domicilio">
-        </div>
-
-        <div class="input-mac">
-            <select id="SexoAgregar" name="SexoAgregar">
-                <option value="">Seleccione sexo</option>
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-            </select>
-        </div>
-
-        <div class="input-mac">
-            <select id="EspecialidadAgregar" name="EspecialidadAgregar">
-                <option value="">Seleccione especialidad</option>
-                <option value="Informatica">Informatica</option>
-                <option value="Electronica">Electronica</option>
-                <option value="Mecatronica">Mecatronica</option>
-                <option value="Administracion">Administracion</option>
-            </select>
-        </div>
-
-        <button id="btnGuardar" class="button">Guardar</button>
-    </div>
-</div>
-
-<script src="/js/app.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/scripts.js"></script>
+
 </html>
