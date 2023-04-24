@@ -12,106 +12,6 @@
 
 </head>
 <body>
-   <div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
-
-   <div class="listadoAlumnos">
-    <h1>Listado de alumnos</h1>
-
-    <table id="alumnos-lista" class="table table-striped">
-        <thead>
-            <tr class="tableEncabezado">
-                <th>ID</th>
-                <th>Matricula</th>
-                <th>Nombre</th>
-                <th>Domicilio</th>
-                <th>Sexo</th>
-                <th>Especialidad</th>
-            </tr>
-        </thead>
-        <tbody>
-            <template id="fila-alumno">
-            <tr>
-                <td class="id"></td>
-                <td class="matricula"></td>
-                <td class="nombre"></td>
-                <td class="domicilio"></td>
-                <td class="sexo"></td>
-                <td class="especialidad"></td>
-            </tr>
-            </template>
-        </tbody>
-    </table>
-   </div>
-
-    <template id="template-tablabuscar">
-    <h3>Datos del alumno buscado:</h3>
-        <table id="alumnos-lista2" class="table table-striped" style="width: 500px;">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Matrícula</th>
-                    <th>Nombre</th>
-                    <th>Domicilio</th>
-                    <th>Sexo</th>
-                    <th>Especialidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <template id="template-filasbuscar">
-                    <tr>
-                        <td class="id"></td>
-                        <td class="matricula"></td>
-                        <td class="nombre"></td>
-                        <td class="domicilio"></td>
-                        <td class="sexo"></td>
-                        <td class="especialidad"></td>
-                    </tr>
-                </template>
-            </tbody>
-        </table>
-    </template>
-
-    <div class="formulario">
-        <div class="buscar">
-            <button id="btnBuscar" class="btn btn-primary">Buscar</button>
-
-                <div class="input-mac">
-                    <input type="text" id="Matricula" name="Matricula" placeholder="Matricula" class="form-control">
-                </div>
-
-                <div class="input-mac">
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control">
-                </div>
-
-                <div class="input-mac">
-                    <input type="text" id="Domicilio" name="Domicilio" placeholder="Domicilio" class="form-control">
-                </div>
-
-                <div class="select-mac">
-                    <select name="Sexo" id="Sexo" class="form-control">
-                        <option value="" disabled selected>Seleccione un Sexo</option>
-                        <option value="M">Masculino</option>
-                        <option value="F">Femenino</option>
-                        <option value="?">Otro</option>
-                    </select>
-                </div>  
-
-                <div class="select-mac">
-                    <select name="Especialidad" id="Especialidad" class="form-control">
-                        <option value="" disabled selected>Seleccione una especialidad</option>
-                        <
-
-
-
-
-Jorge Said Correa Sánchez
-continua
-
-Claro, aquí está el código HTML del body con Bootstrap aplicado:
-
-html
-Copy code
-<body>
     <div class="container">
         <div id="mostrar-alumno-encontrado" class="centrar" style="margin: 10px;"></div>
 
@@ -201,25 +101,14 @@ Copy code
                 <div class="select-mac">
                     <select name="Especialidad" id="Especialidad" class="form-control">
                         <option value="" disabled selected>Seleccione una especialidad</option>
-                        <option value="Ingeniería en
-
-
-
-
-Jorge Said Correa Sánchez
-continua
-
-Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
-<option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
-<option value="Ingeniería Industrial">Ingeniería Industrial</option>
-<option value="Licenciatura en Administración">Licenciatura en Administración</option>
-<option value="Licenciatura en Contaduría">Licenciatura en Contaduría</option>
-<option value="Licenciatura en Derecho">Licenciatura en Derecho</option>
-</select>
-</div>
-
-php
-Copy code
+                        <option value="Ingeniería en Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
+                        <option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
+                        <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                        <option value="Licenciatura en Administración">Licenciatura en Administración</option>
+                        <option value="Licenciatura en Contaduría">Licenciatura en Contaduría</option>
+                        <option value="Licenciatura en Derecho">Licenciatura en Derecho</option>
+                </select>
+                </div>
         </div>
 
         <div class="agregar">
