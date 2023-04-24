@@ -17,8 +17,3 @@ sqlConnection.connect(function (err){
 });
 
 module.exports = sqlConnection;
-
-connection.query("USE sistema", (error, results, fields) => {
-    if (error) throw error;
-    console.log("Base de datos seleccionada: sistema");
-});
